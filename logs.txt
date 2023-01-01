@@ -1,0 +1,369 @@
+pi@raspberrypi:~ $ iifconfig
+bash: iifconfig: command not found
+pi@raspberrypi:~ $ iconfig
+bash: iconfig: command not found
+pi@raspberrypi:~ $ ifconfig
+eth0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether b8:27:eb:de:2b:d5  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlan0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether b8:27:eb:8b:7e:80  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+pi@raspberrypi:~ $ ifconfig
+eth0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether b8:27:eb:de:2b:d5  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlan0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet6 fe80::c59:642b:9296:b44c  prefixlen 64  scopeid 0x20<link>
+        ether b8:27:eb:8b:7e:80  txqueuelen 1000  (Ethernet)
+        RX packets 7  bytes 849 (849.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 10  bytes 1854 (1.8 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+pi@raspberrypi:~ $ ifconfig
+eth0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether b8:27:eb:de:2b:d5  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlan0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.225.54  netmask 255.255.255.0  broadcast 192.168.225.255
+        inet6 2405:204:9426:9c04:d482:1de9:33ae:266f  prefixlen 64  scopeid 0x0<global>
+        inet6 fe80::c59:642b:9296:b44c  prefixlen 64  scopeid 0x20<link>
+        ether b8:27:eb:8b:7e:80  txqueuelen 1000  (Ethernet)
+        RX packets 233  bytes 19099 (18.6 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 61  bytes 8560 (8.3 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+pi@raspberrypi:~ $ sudo apt-get install motion
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  libmariadb3 libpq5 mariadb-common mysql-common
+Suggested packages:
+  default-mysql-client postgresql-client
+The following NEW packages will be installed:
+  libmariadb3 libpq5 mariadb-common motion mysql-common
+0 upgraded, 5 newly installed, 0 to remove and 0 not upgraded.
+Need to get 623 kB of archives.
+After this operation, 2,010 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Err:2 http://raspbian.raspberrypi.org/raspbian buster/main armhf mariadb-common all 1:10.3.23-0+deb10u1
+  404  Not Found [IP: 2a00:1098:0:80:1000:75:0:3 80]
+Get:1 http://mirror.ossplanet.net/raspbian/raspbian buster/main armhf mysql-common all 5.8+1.0.5 [7,324 B]                          
+Err:3 http://raspbian.raspberrypi.org/raspbian buster/main armhf libmariadb3 armhf 1:10.3.23-0+deb10u1                              
+  404  Not Found [IP: 2a00:1098:0:80:1000:75:0:3 80]
+Err:4 http://raspbian.raspberrypi.org/raspbian buster/main armhf libpq5 armhf 11.7-0+deb10u1
+  404  Not Found [IP: 2a00:1098:0:80:1000:75:0:3 80]
+Err:5 http://mirror.ossplanet.net/raspbian/raspbian buster/main armhf motion armhf 4.1.1-1.1+b2                                                                         
+  Connection failed [IP: 2001:e10:6840:17::70 80]
+Fetched 7,324 B in 1min 8s (107 B/s)
+E: Failed to fetch http://raspbian.raspberrypi.org/raspbian/pool/main/m/mariadb-10.3/mariadb-common_10.3.23-0+deb10u1_all.deb  404  Not Found [IP: 2a00:1098:0:80:1000:75:0:3 80]
+E: Failed to fetch http://raspbian.raspberrypi.org/raspbian/pool/main/m/mariadb-10.3/libmariadb3_10.3.23-0+deb10u1_armhf.deb  404  Not Found [IP: 2a00:1098:0:80:1000:75:0:3 80]
+E: Failed to fetch http://raspbian.raspberrypi.org/raspbian/pool/main/p/postgresql-11/libpq5_11.7-0+deb10u1_armhf.deb  404  Not Found [IP: 2a00:1098:0:80:1000:75:0:3 80]
+E: Failed to fetch http://mirror.ossplanet.net/raspbian/raspbian/pool/main/m/motion/motion_4.1.1-1.1+b2_armhf.deb  Connection failed [IP: 2001:e10:6840:17::70 80]
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+pi@raspberrypi:~ $  sudo apt-get update
+Err:1 http://raspbian.raspberrypi.org/raspbian buster InRelease
+  Temporary failure resolving 'raspbian.raspberrypi.org'
+Err:2 http://archive.raspberrypi.org/debian buster InRelease
+  Temporary failure resolving 'archive.raspberrypi.org'
+Reading package lists... Done
+W: Failed to fetch http://raspbian.raspberrypi.org/raspbian/dists/buster/InRelease  Temporary failure resolving 'raspbian.raspberrypi.org'
+W: Failed to fetch http://archive.raspberrypi.org/debian/dists/buster/InRelease  Temporary failure resolving 'archive.raspberrypi.org'
+W: Some index files failed to download. They have been ignored, or old ones used instead.
+pi@raspberrypi:~ $ sudo apt-get upgrade
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Calculating upgrade... Done
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+pi@raspberrypi:~ $ sudo apt-get update
+Get:1 http://raspbian.raspberrypi.org/raspbian buster InRelease [15.0 kB]
+Get:2 http://archive.raspberrypi.org/debian buster InRelease [32.6 kB]                            
+Err:1 http://raspbian.raspberrypi.org/raspbian buster InRelease                                                                                                        
+  Connection timed out [IP: 2a00:1098:0:80:1000:75:0:3 80]
+Err:2 http://archive.raspberrypi.org/debian buster InRelease                                                                                                           
+  Connection failed [IP: 2a00:1098:84:1e0::2 80]
+Reading package lists... Done      
+W: Failed to fetch http://raspbian.raspberrypi.org/raspbian/dists/buster/InRelease  Connection timed out [IP: 2a00:1098:0:80:1000:75:0:3 80]
+W: Failed to fetch http://archive.raspberrypi.org/debian/dists/buster/InRelease  Connection failed [IP: 2a00:1098:84:1e0::2 80]
+W: Some index files failed to download. They have been ignored, or old ones used instead.
+pi@raspberrypi:~ $ sudo apt-get update
+Get:1 http://raspbian.raspberrypi.org/raspbian buster InRelease [15.0 kB]
+Get:2 http://archive.raspberrypi.org/debian buster InRelease [32.6 kB]                         
+Reading package lists... Done                               
+E: Repository 'http://raspbian.raspberrypi.org/raspbian buster InRelease' changed its 'Suite' value from 'stable' to 'oldstable'
+N: This must be accepted explicitly before updates for this repository can be applied. See apt-secure(8) manpage for details.
+E: Repository 'http://archive.raspberrypi.org/debian buster InRelease' changed its 'Suite' value from 'testing' to 'oldstable'
+N: This must be accepted explicitly before updates for this repository can be applied. See apt-secure(8) manpage for details.
+pi@raspberrypi:~ $ sudo apt-get upgrade
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Calculating upgrade... Done
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+pi@raspberrypi:~ $ sudo apt-get update
+Get:1 http://archive.raspberrypi.org/debian buster InRelease [32.6 kB]
+Get:2 http://raspbian.raspberrypi.org/raspbian buster InRelease [15.0 kB]
+Reading package lists... Done                                        
+E: Repository 'http://archive.raspberrypi.org/debian buster InRelease' changed its 'Suite' value from 'testing' to 'oldstable'
+N: This must be accepted explicitly before updates for this repository can be applied. See apt-secure(8) manpage for details.
+E: Repository 'http://raspbian.raspberrypi.org/raspbian buster InRelease' changed its 'Suite' value from 'stable' to 'oldstable'
+N: This must be accepted explicitly before updates for this repository can be applied. See apt-secure(8) manpage for details.
+pi@raspberrypi:~ $ sudo apt-get update --allow-releaseinfo-change
+Get:1 http://archive.raspberrypi.org/debian buster InRelease [32.6 kB]
+Get:2 http://raspbian.raspberrypi.org/raspbian buster InRelease [15.0 kB]
+Get:3 http://archive.raspberrypi.org/debian buster/main armhf Packages [392 kB]
+Get:4 http://raspbian.raspberrypi.org/raspbian buster/main armhf Packages [13.0 MB]
+Get:5 http://raspbian.raspberrypi.org/raspbian buster/contrib armhf Packages [58.8 kB]                                                                                 
+Get:6 http://raspbian.raspberrypi.org/raspbian buster/non-free armhf Packages [104 kB]                                                                                 
+Fetched 13.6 MB in 1min 44s (131 kB/s)                                                                                                                                 
+Reading package lists... Done
+N: Repository 'http://archive.raspberrypi.org/debian buster InRelease' changed its 'Suite' value from 'testing' to 'oldstable'
+N: Repository 'http://raspbian.raspberrypi.org/raspbian buster InRelease' changed its 'Suite' value from 'stable' to 'oldstable'
+pi@raspberrypi:~ $ sudo apt-get upgrade
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Calculating upgrade... Done
+The following package was automatically installed and is no longer required:
+  python-colorzero
+Use 'sudo apt autoremove' to remove it.
+The following packages have been kept back:
+  raspberrypi-sys-mods raspberrypi-ui-mods
+The following packages will be upgraded:
+  agnostics alacarte alsa-utils apt apt-utils arandr aspell avahi-daemon base-files bind9-host bluez bluez-firmware bzip2 ca-certificates chromium-browser
+  chromium-browser-l10n chromium-codecs-ffmpeg-extra cifs-utils curl dbus dbus-user-session dbus-x11 debconf debconf-i18n debconf-utils device-tree-compiler dillo
+  distro-info-data dphys-swapfile dpkg dpkg-dev ffmpeg file firmware-atheros firmware-brcm80211 firmware-libertas firmware-misc-nonfree firmware-realtek git git-man
+  gpicview groff-base gstreamer1.0-alsa gstreamer1.0-libav gstreamer1.0-plugins-bad gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-x gzip iproute2
+  iputils-ping isc-dhcp-client isc-dhcp-common klibc-utils libapt-inst2.0 libapt-pkg5.0 libarchive13 libasound2 libasound2-data libaspell15 libavahi-client3
+  libavahi-common-data libavahi-common3 libavahi-core7 libavahi-glib1 libavcodec58 libavdevice58 libavfilter7 libavformat58 libavresample4 libavutil56 libbind9-161
+  libblockdev-fs2 libblockdev-loop2 libblockdev-part-err2 libblockdev-part2 libblockdev-swap2 libblockdev-utils2 libblockdev2 libbluetooth3 libbluray2 libbrotli1
+  libbsd0 libbz2-1.0 libc-bin libc-dev-bin libc-l10n libc6 libc6-dbg libc6-dev libcairo-gobject2 libcairo2 libcups2 libcupsimage2 libcurl3-gnutls libcurl4 libdbus-1-3
+  libde265-0 libdjvulibre-text libdjvulibre21 libdns-export1104 libdns1104 libdpkg-perl libegl-mesa0 libexif12 libexpat1 libexpat1-dev libfaad2 libflac8
+  libfluidsynth1 libfm-data libfm-extra4 libfm-gtk-data libfm-gtk4 libfm-modules libfm4 libfreetype6 libfreetype6-dev libfribidi0 libgbm1 libgcrypt20 libgif7
+  libgl1-mesa-dri libglapi-mesa libgles2-mesa libglib2.0-0 libglib2.0-bin libglib2.0-data libglx-mesa0 libgmp10 libgnutls30 libgs9 libgs9-common libgssapi-krb5-2
+  libgssdp-1.0-3 libgstreamer-gl1.0-0 libgstreamer-plugins-bad1.0-0 libgstreamer-plugins-base1.0-0 libgupnp-1.0-4 libhogweed4 libicu63 libimobiledevice6
+  libisc-export1100 libisc1100 libisccc161 libisccfg163 libjavascriptcoregtk-4.0-18 libjbig2dec0 libjpeg62-turbo libjs-jquery libjs-underscore libk5crypto3 libklibc
+  libkrb5-3 libkrb5support0 libksba8 libldap-2.4-2 libldap-common libldb1 liblirc-client0 liblwres161 liblz4-1 liblzma5 libmagic-mgc libmagic1 libncurses6
+  libncursesw5 libncursesw6 libnettle6 libnftnl11 libnss3 libntfs-3g883 libobrender32v5 libobt2v5 libopenexr23 libopenjp2-7 libp11-kit0 libpam-systemd libperl5.28
+  libpigpio-dev libpigpio1 libpigpiod-if-dev libpigpiod-if1 libpigpiod-if2-1 libpixman-1-0 libpolkit-agent-1-0 libpolkit-backend-1-0 libpolkit-gobject-1-0
+  libpoppler-qt5-1 libpoppler82 libpostproc55 libproxy-tools libproxy1v5 libpulse0 libpython3.7 libpython3.7-dev libpython3.7-minimal libpython3.7-stdlib
+  libqt5concurrent5 libqt5core5a libqt5dbus5 libqt5gui5 libqt5network5 libqt5printsupport5 libqt5sql5 libqt5sql5-sqlite libqt5widgets5 libqt5xml5 libraspberrypi-bin
+  libraspberrypi-dev libraspberrypi-doc libraspberrypi0 librsvg2-2 librsvg2-common libsasl2-2 libsasl2-modules-db libsdl1.2debian libsndfile1 libsqlite3-0 libssl1.1
+  libswresample3 libswscale5 libsystemd0 libtiff5 libtinfo5 libtinfo6 libtirpc-common libtirpc3 libudev1 libvlc-bin libvlc5 libvlccore9 libwavpack1
+  libwebkit2gtk-4.0-37 libwebp6 libwebpdemux2 libwebpmux3 libx11-6 libx11-data libx11-xcb1 libxml2 libxslt1.1 libzmq5 libzstd1 linux-libc-dev locales lxinput lxpanel
+  lxpanel-data lxplug-bluetooth lxplug-cputemp lxplug-ejecter lxplug-magnifier lxplug-network lxplug-ptbatt lxplug-volume lxterminal mesa-va-drivers
+  mesa-vdpau-drivers multiarch-support ncurses-base ncurses-bin ncurses-term ntfs-3g obconf openbox openssh-client openssh-server openssh-sftp-server openssl pcmanfm
+  perl perl-base perl-modules-5.28 pi-bluetooth pi-greeter pi-package pi-package-data pi-package-session piclone pigpio pigpio-tools pigpiod pipanel pishutdown piwiz
+  pixflat-icons policykit-1 pprompt psmisc publicsuffix python-apt-common python-gpiozero python-pigpio python-pil python-rpi.gpio python-spidev python3-apt
+  python3-debconf python3-gpiozero python3-lxml python3-pgzero python3-pigpio python3-pil python3-pygments python3-rpi.gpio python3-sense-hat python3-spidev python3.7
+  python3.7-dev python3.7-minimal python3.7-venv qt5-gtk-platformtheme raspberrypi-bootloader raspberrypi-kernel raspberrypi-net-mods raspi-config rc-gui rp-bookshelf
+  rp-prefapps rpd-plym-splash rpi-chromium-mods rpi-eeprom rpi-update rpi.gpio-common rsyslog ssh sudo systemd systemd-sysv thonny tzdata udev unzip vim-common
+  vim-tiny vlc vlc-bin vlc-data vlc-l10n vlc-plugin-base vlc-plugin-notify vlc-plugin-qt vlc-plugin-samba vlc-plugin-skins2 vlc-plugin-video-output
+  vlc-plugin-video-splitter vlc-plugin-visualization wpasupplicant x11-xserver-utils xdg-utils xserver-common xserver-xorg-core xxd xz-utils zlib1g zlib1g-dev
+357 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
+Need to get 514 MB of archives.
+After this operation, 93.3 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:2 http://archive.raspberrypi.org/debian buster/main armhf libc6-dbg armhf 2.28-10+rpt2+rpi1+deb10u1 [10.7 MB]
+Get:1 http://mirror.ossplanet.net/raspbian/raspbian buster/main armhf base-files armhf 10.3+rpi1+deb10u13 [70.2 kB]                                                    
+Get:3 http://mirror.ossplanet.net/raspbian/raspbian buster/main armhf dpkg armhf 1.19.8 [2,143 kB]                                                                     
+Get:13 http://archive.raspberrypi.org/debian buster/main armhf libc6-dev armhf 2.28-10+rpt2+rpi1+deb10u1 [2,112 kB]                                                    
+Get:17 http://archive.raspberrypi.org/debian buster/main armhf libc-dev-bin armhf 2.28-10+rpt2+rpi1+deb10u1 [267 kB]                                                   
+Get:18 http://archive.raspberrypi.org/debian buster/main armhf linux-libc-dev armhf 1:1.20220308~buster-1 [1,012 kB]                                                   
+Get:21 http://archive.raspberrypi.org/debian buster/main armhf libc6 armhf 2.28-10+rpt2+rpi1+deb10u1 [2,351 kB]                                                        
+Get:26 http://archive.raspberrypi.org/debian buster/main armhf libc-bin armhf 2.28-10+rpt2+rpi1+deb10u1 [657 kB]                                                       
+Get:4 http://mirror.ossplanet.net/raspbian/raspbian buster/main armhf gzip armhf 1.9-3+deb10u1 [121 kB]                                                                
+Get:28 http://archive.raspberrypi.org/debian buster/main armhf xserver-common all 2:1.20.4-1+rpt4+deb10u6 [2,235 kB]                                                   
+Get:5 http://mirror.ossplanet.net/raspbian/raspbian buster/main armhf ncurses-bin armhf 6.1+20181013-2+deb10u3 [400 kB]                                                
+Get:33 http://archive.raspberrypi.org/debian buster/main armhf xserver-xorg-core armhf 2:1.20.4-1+rpt4+deb10u6 [3,280 kB]                                              
+Get:6 http://mirror.ossplanet.net/raspbian/raspbian buster/main armhf libperl5.28 armhf 5.28.1-6+deb10u1 [3,193 kB]                                                    
+Get:37 http://archive.raspberrypi.org/debian buster/main armhf bluez armhf 5.50-1.2~deb10u3+rpt1 [770 kB]                                                              
+Get:39 http://archive.raspberrypi.org/debian buster/main armhf libasound2 armhf 1.1.8-1+rpt2 [303 kB]                                                                  
+Get:40 http://archive.raspberrypi.org/debian buster/main armhf libasound2-data all 1.1.8-1+rpt2 [60.0 kB]                                                              
+Get:41 http://archive.raspberrypi.org/debian buster/main armhf libgl1-mesa-dri armhf 19.3.2-1~bpo10+1~rpt4 [5,551 kB]                                                  
+Get:50 http://archive.raspberrypi.org/debian buster/main armhf libglx-mesa0 armhf 19.3.2-1~bpo10+1~rpt4 [167 kB]                                                       
+Get:53 http://archive.raspberrypi.org/debian buster/main armhf libegl-mesa0 armhf 19.3.2-1~bpo10+1~rpt4 [120 kB]                                                       
+Get:55 http://archive.raspberrypi.org/debian buster/main armhf libglapi-mesa armhf 19.3.2-1~bpo10+1~rpt4 [78.5 kB]                                                     
+Get:56 http://archive.raspberrypi.org/debian buster/main armhf libgbm1 armhf 19.3.2-1~bpo10+1~rpt4 [67.2 kB]                                                           
+Get:58 http://archive.raspberrypi.org/debian buster/main armhf libpixman-1-0 armhf 0.36.0-1+rpt1+deb10u1 [173 kB]                                                      
+Get:60 http://archive.raspberrypi.org/debian buster/main armhf chromium-browser-l10n all 92.0.4515.98~buster-rpt2 [4,073 kB]                                           
+Get:65 http://archive.raspberrypi.org/debian buster/main armhf libcairo2 armhf 1.16.0-4+rpt1+deb10u1 [600 kB]                                                          
+Get:66 http://archive.raspberrypi.org/debian buster/main armhf xdg-utils all 1.1.3-1+rpt1+deb10u1 [73.7 kB]                                                            
+Get:68 http://archive.raspberrypi.org/debian buster/main armhf libraspberrypi-bin armhf 1:1.20220308~buster-1 [342 kB]                                                 
+Get:70 http://archive.raspberrypi.org/debian buster/main armhf libraspberrypi-doc armhf 1:1.20220308~buster-1 [31.4 MB]                                                
+Get:7 http://mirror.ossplanet.net/raspbian/raspbian buster/main armhf perl armhf 5.28.1-6+deb10u1 [204 kB]                                                             
+Get:8 http://mirror.ossplanet.net/raspbian/raspbian buster/main armhf perl-base armhf 5.28.1-6+deb10u1 [1,352 kB]                                                      
+Get:9 http://mirror.ossplanet.net/raspbian/raspbian buster/main armhf perl-modules-5.28 all 5.28.1-6+deb10u1 [2,873 kB]                                                
+Get:81 http://ftp.tsukuba.wide.ad.jp/Linux/raspbian/raspbian buster/main armhf libkrb5support0 armhf 1.17-3+deb10u5 [62.6 kB]                                          
+Get:10 http://mirror.ossplanet.net/raspbian/raspbian buster/main armhf bzip2 armhf 1.0.6-9.2~deb10u2 [46.3 kB]                                                         
+Get:10 http://mirror.ossplanet.net/raspbian/raspbian buster/main armhf bzip2 armhf 1.0.6-9.2~deb10u2 [46.3 kB]                                                         
+Get:11 http://mirror.ossplanet.net/raspbian/raspbian buster/main armhf libbz2-1.0 armhf 1.0.6-9.2~deb10u2 [43.3 kB]                                                    
+Get:12 http://mirror.ossplanet.net/raspbian/raspbian buster/main armhf zlib1g-dev armhf 1:1.2.11.dfsg-1+deb10u2 [203 kB]                                               
+Get:14 http://mirror.ossplanet.net/raspbian/raspbian buster/main armhf zlib1g armhf 1:1.2.11.dfsg-1+deb10u2 [84.6 kB]                                                  
+Get:15 http://mirror.ossplanet.net/raspbian/raspbian buster/main armhf ncurses-base all 6.1+20181013-2+deb10u3 [259 kB]                                                
+Get:100 http://ftp.tsukuba.wide.ad.jp/Linux/raspbian/raspbian buster/main armhf libncursesw6 armhf 6.1+20181013-2+deb10u3 [103 kB]                                     
+Get:16 http://mirror.ossplanet.net/raspbian/raspbian buster/main armhf liblz4-1 armhf 1.8.3-1+deb10u1 [49.7 kB]                                                        
+Get:19 http://mirror.ossplanet.net/raspbian/raspbian buster/main armhf liblzma5 armhf 5.2.4-1+deb10u1 [144 kB]                                                         
+Get:20 http://mirror.ossplanet.net/raspbian/raspbian buster/main armhf dbus-user-session armhf 1.12.24-0+deb10u1 [97.9 kB]                                             
+Get:22 http://mirror.ossplanet.net/raspbian/raspbian buster/main armhf libx11-data all 2:1.6.7-1+deb10u2 [299 kB]                                                      
+Get:111 http://ftp.tsukuba.wide.ad.jp/Linux/raspbian/raspbian buster/main armhf iproute2 armhf 4.20.0-2+deb10u1 [720 kB]                                               
+Get:23 http://mirror.ossplanet.net/raspbian/raspbian buster/main armhf libx11-6 armhf 2:1.6.7-1+deb10u2 [689 kB]                                                       
+Get:116 http://archive.raspberrypi.org/debian buster/main armhf libraspberrypi-dev armhf 1:1.20220308~buster-1 [401 kB]                                                
+Get:119 http://archive.raspberrypi.org/debian buster/main armhf raspberrypi-kernel armhf 1:1.20220308~buster-1 [79.9 MB]                                               
+Get:24 http://mirror.ossplanet.net/raspbian/raspbian buster/main armhf dbus-x11 armhf 1.12.24-0+deb10u1 [109 kB]                                                       
+Get:25 http://mirror.ossplanet.net/raspbian/raspbian buster/main armhf dbus armhf 1.12.24-0+deb10u1 [215 kB]                                                           
+Get:27 http://mirror.ossplanet.net/raspbian/raspbian buster/main armhf libdbus-1-3 armhf 1.12.24-0+deb10u1 [193 kB]                                                    
+Get:29 http://mirror.ossplanet.net/raspbian/raspbian buster/main armhf libexpat1-dev armhf 2.2.6-2+deb10u6 [134 kB]                                                    
+Get:30 http://mirror.ossplanet.net/raspbian/raspbian buster/main armhf libexpat1 armhf 2.2.6-2+deb10u6 [78.8 kB]                                                       
+Get:31 http://mirror.ossplanet.net/raspbian/raspbian buster/main armhf systemd-sysv armhf 241-7~deb10u8+rpi1 [101 kB]                                                  
+Get:32 http://mirror.ossplanet.net/raspbian/raspbian buster/main armhf libpam-systemd armhf 241-7~deb10u8+rpi1 [194 kB]                                                
+Get:34 http://mirror.ossplanet.net/raspbian/raspbian buster/main armhf libsystemd0 armhf 241-7~deb10u8+rpi1 [306 kB]                                                   
+Get:35 http://mirror.ossplanet.net/raspbian/raspbian buster/main armhf systemd armhf 241-7~deb10u8+rpi1 [3,258 kB]                                                     
+Get:36 http://mirror.ossplanet.net/raspbian/raspbian buster/main armhf udev armhf 241-7~deb10u8+rpi1 [1,248 kB]                                                        
+21% [36 udev 1,171 kB/1,248 kB 94%] [Connecting to raspbian.raspberrypi.org (93.93.128.193)] [119 raspberrypi-kernel 31.0 MB/79.9 MB 39%]            140 kB/s 47min 10s^C
+pi@raspberrypi:~ $ sudo apt-get install motion
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  libmariadb3 libpq5 mariadb-common mysql-common
+Suggested packages:
+  default-mysql-client postgresql-client
+The following NEW packages will be installed:
+  libmariadb3 libpq5 mariadb-common motion mysql-common
+0 upgraded, 5 newly installed, 0 to remove and 359 not upgraded.
+Need to get 625 kB/632 kB of archives.
+After this operation, 2,028 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://mirror.ossplanet.net/raspbian/raspbian buster/main armhf mariadb-common all 1:10.3.36-0+deb10u2 [33.2 kB]
+Get:2 http://mirror.ossplanet.net/raspbian/raspbian buster/main armhf libmariadb3 armhf 1:10.3.36-0+deb10u2 [161 kB]
+Get:3 http://mirror.ossplanet.net/raspbian/raspbian buster/main armhf libpq5 armhf 11.18-0+deb10u1 [156 kB]
+Get:4 http://mirror.ossplanet.net/raspbian/raspbian buster/main armhf motion armhf 4.1.1-1.1+b2 [274 kB]
+Fetched 625 kB in 6s (105 kB/s)  
+Preconfiguring packages ...
+Selecting previously unselected package mysql-common.
+(Reading database ... 93801 files and directories currently installed.)
+Preparing to unpack .../mysql-common_5.8+1.0.5_all.deb ...
+Unpacking mysql-common (5.8+1.0.5) ...
+Selecting previously unselected package mariadb-common.
+Preparing to unpack .../mariadb-common_1%3a10.3.36-0+deb10u2_all.deb ...
+Unpacking mariadb-common (1:10.3.36-0+deb10u2) ...
+Selecting previously unselected package libmariadb3:armhf.
+Preparing to unpack .../libmariadb3_1%3a10.3.36-0+deb10u2_armhf.deb ...
+Unpacking libmariadb3:armhf (1:10.3.36-0+deb10u2) ...
+Selecting previously unselected package libpq5:armhf.
+Preparing to unpack .../libpq5_11.18-0+deb10u1_armhf.deb ...
+Unpacking libpq5:armhf (11.18-0+deb10u1) ...
+Selecting previously unselected package motion.
+Preparing to unpack .../motion_4.1.1-1.1+b2_armhf.deb ...
+Unpacking motion (4.1.1-1.1+b2) ...
+Setting up mysql-common (5.8+1.0.5) ...
+update-alternatives: using /etc/mysql/my.cnf.fallback to provide /etc/mysql/my.cnf (my.cnf) in auto mode
+Setting up libpq5:armhf (11.18-0+deb10u1) ...
+Setting up mariadb-common (1:10.3.36-0+deb10u2) ...
+update-alternatives: using /etc/mysql/mariadb.cnf to provide /etc/mysql/my.cnf (my.cnf) in auto mode
+Setting up libmariadb3:armhf (1:10.3.36-0+deb10u2) ...
+Setting up motion (4.1.1-1.1+b2) ...
+Adding group `motion' (GID 116) ...
+Done.
+Warning: The home dir /var/lib/motion you specified already exists.
+Adding system user `motion' (UID 110) ...
+Adding new user `motion' (UID 110) with group `motion' ...
+The home directory `/var/lib/motion' already exists.  Not copying from `/etc/skel'.
+adduser: Warning: The home directory `/var/lib/motion' does not belong to the user you are currently creating.
+Adding user `motion' to group `video' ...
+Adding user motion to group video
+Done.
+Processing triggers for systemd (241-7~deb10u4+rpi1) ...
+Processing triggers for man-db (2.8.5-2) ...
+Processing triggers for libc-bin (2.28-10+rpi1) ...
+pi@raspberrypi:~ $ lsusb
+Bus 001 Device 005: ID 1903:8328  
+Bus 001 Device 004: ID 03f0:6341 HP, Inc 
+Bus 001 Device 003: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 002: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+pi@raspberrypi:~ $ sudo nano /etc/motion/motion.conf
+pi@raspberrypi:~ $ sudo nano /etc/motion/motion.conf
+pi@raspberrypi:~ $ sudo service motion restart
+pi@raspberrypi:~ $ ifconfig
+eth0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether b8:27:eb:de:2b:d5  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlan0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.225.54  netmask 255.255.255.0  broadcast 192.168.225.255
+        inet6 2405:204:9426:9c04:d482:1de9:33ae:266f  prefixlen 64  scopeid 0x0<global>
+        inet6 fe80::c59:642b:9296:b44c  prefixlen 64  scopeid 0x20<link>
+        ether b8:27:eb:8b:7e:80  txqueuelen 1000  (Ethernet)
+        RX packets 109516  bytes 150835892 (143.8 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 56538  bytes 6992604 (6.6 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+pi@raspberrypi:~ $ sudo motion
+[18392712:motion] [NTC] [ALL] conf_load: Processing thread 0 - config file /etc/motion/motion.conf
+[18392712:motion] [NTC] [ALL] motion_startup: Motion 4.1.1 Started
+[18392712:motion] [NTC] [ALL] create_path: creating directory /var/log/motion
+[18392712:motion] [NTC] [ALL] motion_startup: Logging to file (/var/log/motion/motion.log)
+pi@raspberrypi:~ $                                       
+
