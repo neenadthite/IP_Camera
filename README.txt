@@ -1,5 +1,15 @@
+Hi!!!! Bonjour!!!!
+
+We have a plethora of CCTV's, home survellience cameras in the market. Many provide encrypted service. However, still data privacy issue persisits.
+The special feature of this project is that the video streaming can only be accessed if the viewer device is in the same network.
+The logistics used and setps involved in this are mentioned below.
+Requirements:
+Hardware: Raspberry Pi 3 (use can use Pi zero etc.), External Webcam (Pi camera can also be used), SD card, Laptop
+Software: Raspbian OS, Motion package
+Knowledge: You should be able to Flash the Pi OS, and enter inputs to the Pi by directly accessing the OS Graphical UI or through SSH.
+
 Step 1:
-Install Raspbian OS on SD card and Insert the card into Raspberry Pi. Connect to a WiFi Router or Access point. Connect a webcam or IP camera.
+Install Raspbian OS on SD card and Insert the card into Raspberry Pi. Connect to a WiFi Router or Access Point. Connect a webcam or Pi camera to the Pi.
 
 Step 2:
 Install Motion package using 
