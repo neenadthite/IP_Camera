@@ -2,7 +2,7 @@ Step 1:
 Install Raspbian OS on SD card and Insert the card into Raspberry Pi. Connect to a WiFi Router or Access point. Connect a webcam or IP camera.
 
 Step 2:
-Install Motion OS using 
+Install Motion package using 
 sudo apt-get install motion 
 
 Step 3:
